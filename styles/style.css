@@ -1,0 +1,142 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+- Very Dark Grayish Blue: hsl(217, 19%, 35%)
+- Desaturated Dark Blue: hsl(214, 17%, 51%)
+- Grayish Blue: hsl(212, 23%, 69%)
+- Light Grayish Blue: hsl(210, 46%, 95%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 13px
+
+### Headings
+
+- Family: [Manrope](https://fonts.google.com/specimen/Manrope)
+- Weights: 500, 700
+
+## Icons
+
+We provide SVGs for the social icons. But please feel free to use a font icon library if you like. Some suggestions can be found below:
+
+- [Font Awesome](https://fontawesome.com)
+- [IcoMoon](https://icomoon.io)
+- [Ionicons](https://ionicons.com) */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+}
+
+section.main {
+  height: 100vh;
+  background: hsl(210, 46%, 95%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  width: 710px;
+  height: 280px;
+  box-shadow: 0 20px 38px rgba(0, 0, 0, 0.15);
+  display: flex;
+  overflow: hidden;
+}
+
+.card-img {
+  background: url("../images/drawers.jpg") no-repeat center center/cover;
+  width: 110%;
+  background-position: 0px center;
+}
+
+.content {
+  padding: 28px;
+}
+
+.content h1 {
+  color: hsl(217, 19%, 35%);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.content > p {
+  color: hsl(214, 17%, 51%);
+  line-height: 1.6;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.credentials {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.post-info {
+  display: flex;
+  align-items: center;
+}
+
+.credentials img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.post-info .name {
+  color: hsl(217, 19%, 35%);
+  font-weight: 700;
+}
+
+.post-info p.post-date {
+  margin-top: 3px;
+  color: hsl(212, 23%, 69%);
+  font-weight: 500;
+}
+
+a.share-holder {
+  height: 35px;
+  width: 35px;
+  background-color: hsl(210, 46%, 95%);
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+a.share-holder img {
+  height: 35%;
+  width: 50%;
+  position: relative;
+  left: 9px;
+  top: 9px;
+}
+
+/* Attribution */
+.attribution {
+  margin-top: -50px;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
