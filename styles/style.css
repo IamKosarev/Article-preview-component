@@ -1,38 +1,3 @@
-/* # Front-end Style Guide
-
-## Layout
-
-The designs were created to the following widths:
-
-- Mobile: 375px
-- Desktop: 1440px
-
-## Colors
-
-- Very Dark Grayish Blue: hsl(217, 19%, 35%)
-- Desaturated Dark Blue: hsl(214, 17%, 51%)
-- Grayish Blue: hsl(212, 23%, 69%)
-- Light Grayish Blue: hsl(210, 46%, 95%)
-
-## Typography
-
-### Body Copy
-
-- Font size: 13px
-
-### Headings
-
-- Family: [Manrope](https://fonts.google.com/specimen/Manrope)
-- Weights: 500, 700
-
-## Icons
-
-We provide SVGs for the social icons. But please feel free to use a font icon library if you like. Some suggestions can be found below:
-
-- [Font Awesome](https://fontawesome.com)
-- [IcoMoon](https://icomoon.io)
-- [Ionicons](https://ionicons.com) */
-
 * {
   margin: 0;
   padding: 0;
@@ -52,6 +17,7 @@ section.main {
   align-items: center;
 }
 
+/* Card */
 .card {
   background: #fff;
   border-radius: 10px;
@@ -59,13 +25,13 @@ section.main {
   height: 280px;
   box-shadow: 0 20px 38px rgba(0, 0, 0, 0.15);
   display: flex;
-  overflow: hidden;
 }
 
 .card-img {
   background: url("../images/drawers.jpg") no-repeat center center/cover;
   width: 110%;
   background-position: 0px center;
+  border-radius: 10px 0px 0px 10px;
 }
 
 .content {
@@ -119,7 +85,6 @@ a.share-holder {
   width: 35px;
   background-color: hsl(210, 46%, 95%);
   border-radius: 50%;
-  display: inline-block;
   cursor: pointer;
 }
 
@@ -129,6 +94,65 @@ a.share-holder img {
   position: relative;
   left: 9px;
   top: 9px;
+}
+
+a.share-holder:hover {
+  background: #ccc;
+}
+
+a.share-holder:active {
+  transform: translateY(2px);
+}
+
+/* Share Menu */
+
+.popup-container {
+  position: relative;
+  visibility: hidden;
+}
+
+.show {
+  visibility: visible;
+  animation: fadeIn ease 0.2s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.popup-container .share-menu {
+  position: absolute;
+  right: -55px;
+  bottom: 105px;
+  background: hsl(217, 19%, 35%);
+  height: 30px;
+  width: 220px;
+  color: hsl(212, 23%, 69%);
+  letter-spacing: 3px;
+  padding: 28px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.popup-container .share-menu a {
+  margin: 0 5px;
+}
+
+.popup-container .share-menu:after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  border-width: 10px;
+  border-style: solid;
+  border-color: hsl(217, 19%, 35%) transparent transparent transparent;
 }
 
 /* Attribution */

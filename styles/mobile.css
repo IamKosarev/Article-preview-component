@@ -1,0 +1,48 @@
+.card {
+  height: 450px;
+  width: 307px;
+  display: block;
+}
+
+.card-img {
+  background: url("../images/drawers.jpg") no-repeat center center/cover;
+  height: 35%;
+  width: 100%;
+  background-position: 0px center;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.content h1 {
+  font-size: 16px;
+}
+
+.content > p {
+  margin-bottom: 34px;
+}
+
+a.share-holder {
+  z-index: 1;
+}
+
+.popup-container .share-menu {
+  width: 100%;
+  right: 0px;
+  bottom: 18px;
+  border-radius: 0px 0px 10px 10px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.popup-container .share-menu > p {
+  margin-right: 20px;
+}
+
+.popup-container .share-menu a {
+  margin: 0 5px;
+}
+
+.popup-container .share-menu:after {
+  display: none;
+}
